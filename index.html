@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NewsIndia — Latest Breaking News & Analysis</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main">
+        <h1 class="site-title">News<span>India</span></h1>
+        <div class="header-actions">
+          <input id="search" type="search" placeholder="Search articles..." aria-label="Search articles">
+        </div>
+      </div>
+      <nav id="categories" class="nav-bar" aria-label="Categories">
+        <a href="#" class="active">All News</a>
+        <a href="#">Business</a>
+        <a href="#">Tech</a>
+        <a href="#">Politics</a>
+        <a href="#">Sports</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <div class="content-area">
+      <section id="articles" class="articles-grid" aria-live="polite">
+        </section>
+    </div>
+
+    <aside class="sidebar">
+      <div class="ad-card">
+        <span class="ad-label">Advertisement</span>
+        <div class="ad-placeholder">
+          <p>AdSense Unit (300x250)</p>
+        </div>
+      </div>
+      <div class="sidebar-box about">
+        <h3>About NewsIndia</h3>
+        <p>Providing high-quality, real-time news coverage on global markets, technology, and local updates.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> NewsIndia. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <template id="article-template">
+    <article class="news-card">
+      <div class="thumb-wrapper">
+        <img class="thumb" src="" alt="article image">
+      </div>
+      <div class="card-body">
+        <span class="category-tag">General</span>
+        <h2 class="card-title"></h2>
+        <p class="meta"></p>
+        <p class="excerpt"></p>
+        <a href="article.html" class="read-more-btn">Read Article</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
